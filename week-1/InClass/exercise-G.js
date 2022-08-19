@@ -6,4 +6,4 @@ const teacherpercentage = teachers * 100;
 console.log("Percentage of students:" ,Math.round(Studentpercentage / 23));
 console.log("Percentage of Teachers:" ,Math.round(teacherpercentage / 23));
 
-console.log("Percentage of Teachers after trunc funcation:" ,Math.trunc(teacherpercentage / 23));
+console.log("Percentage of Teachers after trunc funcationno:" ,Math.trunc(teacherpercentage / 23));
