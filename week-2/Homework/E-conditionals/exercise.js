@@ -9,10 +9,10 @@
 var name = "Daniel";
 var danielsRole = "mentor";
 if (danielsRole=="mentor"){
-  console.log("Hi, I'm Daniel, I'm a mentor.")
+  console.log(`Hi, i'm ${name},I'm a ${danielsRole}`)
 }
-  else{
-console.log("Hi, I'm Daniel, I'm a student.")
+  else if(danielsRole=="student"){ 
+console.log(`Hi,i'm ${name},I'm a ${danielsRole}`)
 
 }
 /* 
