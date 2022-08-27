@@ -21,3 +21,12 @@ function showDaysOfWeek(days, letter){
   }
 }
 showDaysOfWeek(daysOfWeek,"T")
+
+const maxNumber=[5,6,13,54,23,43,68]
+n=0;
+for(let i=0; i<mx;i++)
+{
+mx = n+1; 
+n++;
+}
+console.log(maxNumber[n])
