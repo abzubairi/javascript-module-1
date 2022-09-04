@@ -8,10 +8,10 @@
   NOTE: don't include any element that is not a "family".
 */
 
-function colonisers() {
-
+function colonisers(array) {
+return e[0]=="A" && e.includes("family") 
 }
-
+console.log
 /* ======= TESTS - DO NOT MODIFY ===== */
 
 const voyagers = [

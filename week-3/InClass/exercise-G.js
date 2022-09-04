@@ -1,15 +1,22 @@
-const birthYears = [1964, 2008, 1999, 2015, 1978, 1985, 1919]
-function getDrivers(array){
-    return array.filter(e => age(e) >= 17) // returns a new array with only those elements that fit the condition. Written in arrow syntax
-  }
-  
-  // the same just writen with anonymous function as a argument
-  function getDrivers_2(array){
-    return array.filter(function(e){
-      return age(e) >= 17 // we are calling the age function with the current element of the array as an argument
-    })
-  }
-  
-  
-  console.log(getDrivers(birthYears));
-  console.log(getDrivers_2(birthYears));
+const birthYears = [1964, 2008, 1999, 2005, 1978, 1985, 1919]
+
+function age(birthYear) {
+    return 2022 - birthYear
+}
+
+function canYouDrive(birthYear) {
+    const personAge = age(birthYear)
+    if (personAge >= 17) {
+        console.log(`Born in ${birthYear} can drive`)
+    } else {
+        console.log(`Born in ${birthYear} can drive in ${17 - personAge} years`)
+    }
+}
+
+
+
+birthYears.map(canYouDrive)
+
+const peopleCanDrive = birthYears.filter(year => age(year) > 17)
+
+console.log(peopleCanDrive)
